@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport de stage</title>
+
+    <style>
+        /* --------------------
+           STYLE GÉNÉRAL
+        -------------------- */
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            background-color: #fdf3e7;
+            color: #3b2f2f;
+        }
+
+        header {
+            background: linear-gradient(135deg, #d35400, #e67e22);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            color: #d35400;
+            border-left: 6px solid #e67e22;
+            padding-left: 10px;
+            margin-bottom: 25px;
+        }
+
+        .box {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .image-zone {
+            margin-top: 15px;
+            padding: 20px;
+            border: 2px dashed #e0a96d;
+            border-radius: 10px;
+            text-align: center;
+            color: #a67c52;
+            font-style: italic;
+        }
+
+        /* --------------------
+           ACTIVITÉS EN ALTERNANCE
+        -------------------- */
+        .activite {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .activite.gauche {
+            flex-direction: row;
+        }
+
+        .activite.droite {
+            flex-direction: row-reverse;
+        }
+
+        .activite .texte {
+            flex: 1;
+        }
+
+        .activite .image-zone {
+            flex: 1;
+        }
+
+        .titre-activite {
+            font-weight: bold;
+            font-size: 1.3em;
+            color: #c0392b;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #d35400;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+        }
+
+        /* --------------------
+           MODE IMPRESSION
+        -------------------- */
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            header {
+                background: #d35400;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rapport de stage</h1>
+    <p>Stage de trois semaines</p>
+</header>
+
+<main>
+
+    <!-- ====================
+         PRÉSENTATION PERSONNELLE
+    ==================== -->
+    <section>
+        <h2>Présentation personnelle</h2>
+
+        <div class="box">
+            <p>
+                [Écris ici ta présentation : nom, âge, classe, établissement, pourquoi tu as choisi ce stage, ce que tu attends de cette expérience.]
+            </p>
+
+            <div class="image-zone">
+                Zone pour insérer une photo ou une image te représentant
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================
+         PRÉSENTATION DE L’ENTREPRISE
+    ==================== -->
+    <section>
+        <h2>Présentation de l’entreprise</h2>
+
+        <div class="box">
+            <p>
+                [Présente ici l’entreprise : nom, domaine d’activité, localisation, nombre d’employés, organisation générale, rôle de l’entreprise.]
+            </p>
+
+            <div class="image-zone">
+                Zone pour insérer le logo ou une photo de l’entreprise
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================
+         ACTIVITÉS DU STAGE
+    ==================== -->
+    <section>
+        <h2>Activités réalisées pendant le stage</h2>
+
+        <!-- ACTIVITÉ 1 : GAUCHE -->
+        <div class="activite gauche">
+            <div class="texte box">
+                <div class="titre-activite">Activité 1</div>
+                <p>
+                    [Explique la première activité : ce que tu as fait, avec qui, les outils utilisés et ce que tu as appris.]
+                </p>
+            </div>
+
+            <div class="image-zone">
+                Image de l’activité 1
+            </div>
+        </div>
+
+        <!-- ACTIVITÉ 2 : DROITE -->
+        <div class="activite droite">
+            <div class="texte box">
+                <div class="titre-activite">Activité 2</div>
+                <p>
+                    [Décris ici la deuxième activité importante de ton stage.]
+                </p>
+            </div>
+
+            <div class="image-zone">
+                Image de l’activité 2
+            </div>
+        </div>
+
+        <!-- ACTIVITÉ 3 : GAUCHE -->
+        <div class="activite gauche">
+            <div class="texte box">
+                <div class="titre-activite">Activité 3</div>
+                <p>
+                    [Présente la troisième activité qui t’a marqué.]
+                </p>
+            </div>
+
+            <div class="image-zone">
+                Image de l’activité 3
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ====================
+         CONCLUSION GÉNÉRALE
+    ==================== -->
+    <section>
+        <h2>Conclusion générale</h2>
+
+        <div class="box">
+            <p>
+                [Explique ce que ce stage t’a apporté, ce que tu as appris, ce que tu as aimé ou moins aimé, et en quoi cela t’aide pour ton orientation future.]
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Rapport de stage – Année scolaire</p>
+</footer>
+
+</html>
